@@ -181,6 +181,28 @@ nav.show ul.grid {
     gap: 4rem;
 }
 
+/* toggle menu */
+
+.toggle {
+    color: var(--base-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav .icon-close {
+    visibility: visible;
+    opacity: 0;
+
+    position: absolute;
+    right: 1.5rem;
+    /* trnasição */
+}
+
+nav.show div.icon-close {
+    visibility: visible;
+    opacity: 1;
+}
+
 main {
     margin-top: calc(var(--header-height) + 2rem);
 }
