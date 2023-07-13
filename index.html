@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header id="header">
 
-        <nav class="container show">
+        <nav class="container">
             <a class="logo" href="#">beauty<span>salon</span>.</a>
             <!-- menu -->
             <div class="menu">
@@ -36,6 +41,8 @@
     </header>
 
     <main>
+            <!-- home -->
+        
         <section class="section" id="home">
             <div class="container grid">
                 <div class="image">
@@ -57,6 +64,9 @@
 
         <div class="divider-1"></div>
 
+
+            <!-- about -->
+
         <section class="section" id="about">
             <div class="container grid">
                 <div class="image">
@@ -74,6 +84,8 @@
         </section>
 
         <div class="divider-2"></div>
+
+            <!-- services -->
 
         <section class="section" id="services">
             <div class="container grid">
@@ -103,7 +115,107 @@
                 </div>
             </div>
         </section>
+
+        <div class="divider-1"></div>
+
+            <!-- testimonials -->
+
+        <section class="section" id="testimonials">
+            <div class="container swiper">
+                <header>
+                    <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+                </header>
+                <div class="testimonials swiper-container">
+
+                    <div class="swiper-wrapper">
+                        
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus iusto eveniet adipisci impedit ut, quis a, temporibus dolores veritatis fuga recusandae ea perspiciatis sed eius exercitationem magnam illum! Nostrum, a!
+                                </p>
+                                <cite>
+                                    <img src="https://pps.whatsapp.net/v/t61.24694-24/357675146_591836396429683_3330441286112305361_n.jpg?ccb=11-4&oh=01_AdSfl4qJcktPCXAb2N6vfnWqiir7f_ROd_86T3N1PfD25A&oe=64BC3B80" alt="Foto de Alice Mariana">
+                                    Alice Mariana
+                                </cite>
+                            </blockquote>
+                        </div>
+    
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus iusto eveniet adipisci impedit ut, quis a, temporibus dolores veritatis fuga recusandae ea perspiciatis sed eius exercitationem magnam illum! Nostrum, a!
+                                </p>
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="Foto de Wanessa Souza">
+                                    Wanessa Souza
+                                </cite>
+                            </blockquote>
+                        </div>
+    
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus iusto eveniet adipisci impedit ut, quis a, temporibus dolores veritatis fuga recusandae ea perspiciatis sed eius exercitationem magnam illum! Nostrum, a!
+                                </p>
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Foto de Ingrid Pascoal">
+                                    Ingrid Pascoal 
+                                </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <div class="divider-2"></div>
+
+            <!-- contact -->
+
+        <section class="section" id="contact">
+            <div class="container grid">
+                <div class="text">
+                    <h2 class="title">Entre em contato com a gente</h2>
+                    <p>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+                    <a href="https://contate.me/erickmarcos" target="_blank" class="button"><i class="icon-whatsapp"></i> Entrar em contato</a>
+                </div>
+
+                <div class="links">
+                    <ul class="grid">
+                        <li>
+                            <i class="icon-phone"></i> 84 99857-6737
+                        </li>
+                        <li>
+                            <i class="icon-map-pin"></i> R. Pastor Juscelino, 15
+                        </li>
+                        <li>
+                            <i class="icon-mail"></i> contato@beautysalon.com
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </section>
+
     </main>
+
+            <!-- SWIPER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <!-- SCROLL REVEAL -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 
     <script src="main.js"></script>
 </body>
