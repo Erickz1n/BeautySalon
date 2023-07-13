@@ -58,9 +58,11 @@ const scrollReveal = ScrollReveal({
 })
 
 scrollReveal.reveal(
-    `#home .text, #home .image,
+    `#home .image, #home .text,
     #about .image, #about .text,
     #services header, #services .card,
-    #testimnoials header, #testimonials .testimonials,
+    #testimonials header, #testimonials .testimonials
     #contact .text, #contact .links
-    `, {interval: 100})
+    `,
+    { interval: 100 }
+)
