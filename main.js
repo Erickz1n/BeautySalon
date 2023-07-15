@@ -23,8 +23,6 @@ for(const link of links) {
 
 // mudar o header da página quando der scroll
 
-
-
 function changeHeaderWhenScroll() {
     const header = document.querySelector("#header")
     const navHeight = header.offsetHeight
@@ -49,9 +47,15 @@ const swiper = new Swiper('.swiper-container', {
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            setWrapperSize: true
+        }
+    }
 });
 
-/* ScrollReveal: mostrar elementos quando der scroll na pagina */
+// ScrollReveal: mostrar elementos quando der scroll na pagina
 
 const scrollReveal = ScrollReveal({
     origin: 'top',
