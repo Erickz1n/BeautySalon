@@ -3,7 +3,7 @@
 
 // ABRE E FECHA O MENU QUANDO CLICAR NO ICONE: HAMBURGUER E X
 const nav = document.querySelector('#header nav')
-const toggle = document.querySelectorAll("nav .toggle")
+const toggle = document.querySelectorAll('nav .toggle')
 
 for(const element of toggle) {
     element.addEventListener('click', function() {
@@ -15,20 +15,18 @@ for(const element of toggle) {
 
 const links = document.querySelectorAll('nav ul li a')
 
-for(const link of links) {
+for (const link of links) {
     link.addEventListener('click', function() {
         nav.classList.remove('show')
     })
 }
 
 // mudar o header da página quando der scroll
-const header = document.querySelector("#header")
+const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
 function changeHeaderWhenScroll() {
-
-
-    if(this.window.scrollY >= navHeight) {
+    if (window.scrollY >= navHeight) {
         // scroll é maior que a altura do header
 
         header.classList.add('scroll')
@@ -79,13 +77,13 @@ scrollReveal.reveal(
 const backToTopButton = document.querySelector('.back-to-top')
 
 function backToTop() {
-
     if (window.scrollY >= 560) {
         backToTopButton.classList.add('show')
     } else {
         backToTopButton.classList.remove('show')
     }
 }
+
 // Menu ativo conforme a seção visível na página
 const sections = document.querySelectorAll('main section[id]')
 function activateMenuAtCurrentSection() {
@@ -101,11 +99,11 @@ function activateMenuAtCurrentSection() {
 
         if(checkpointStart && checkpointEnd) {
             document
-            .querySelector('nav ul li a[href*=' + sectionId + ']'  )
+            .querySelector('nav ul li a[href*=' + sectionId + ']')
             .classList.add('active')
         } else {
             document
-            .querySelector('nav ul li a[href*=' + sectionId + ']'  )
+            .querySelector('nav ul li a[href*=' + sectionId + ']')
             .classList.remove('active')
         }
     }
