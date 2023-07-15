@@ -430,6 +430,7 @@ nav.show div.icon-close {
 
 span.swiper-pagination-bullet-active {
     background: var(--base-color);
+    transition: 0.5s;
 }
 
 /* contact */
@@ -632,7 +633,7 @@ footer .social a:hover {
     #contact .text {
         max-width: 25rem;
     }
-    
+
     /* footer */
     footer.section {
         padding: 3.75rem 0;
