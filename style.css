@@ -428,7 +428,7 @@ nav.show div.icon-close {
     padding: 4rem 1rem;
 }
 
-.swiper-pagination-bullet-active {
+span.swiper-pagination-bullet-active {
     background: var(--base-color);
 }
 
@@ -482,7 +482,7 @@ footer .brand p {
 
 footer i {
     font-size: 1.5rem;
-    color:var(--text-color-light);
+    color: var(--text-color-light);
 }
 
 footer .social {
